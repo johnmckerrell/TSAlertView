@@ -47,7 +47,7 @@
 	CGContextDrawRadialGradient(UIGraphicsGetCurrentContext(), 
 								backgroundGradient, 
 								CGPointMake(width/2, height/2), 0,
-								CGPointMake(width/2, height/2), width,
+								CGPointMake(width/2, height/2), MAX(width,height),
 								0);
 	
 	CGGradientRelease(backgroundGradient);
